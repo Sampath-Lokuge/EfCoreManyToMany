@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.EntityFrameworkCore.Tools</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.EntityFrameworkCore.Design.OperationExecutor">
+            <summary>
+                A version-resilient, AppDomain-and-reflection-friendly facade for command operations.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Design.Internal.CommandLoggerAdapter">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Design.Internal.CommandLoggerAdapter.#ctor(System.String,Microsoft.EntityFrameworkCore.Design.IOperationLogHandler)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Design.Internal.CommandLoggerAdapter.WriteError(System.String)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Design.Internal.CommandLoggerAdapter.WriteInformation(System.String)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Design.Internal.CommandLoggerAdapter.WriteWarning(System.String)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Design.Internal.CommandLoggerAdapter.WriteDebug(System.String)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Design.Internal.CommandLoggerAdapter.WriteTrace(System.String)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Design.Internal.ForwardingProxy">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Design.Internal.ForwardingProxy.Unwrap``1(System.Object)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Design.Internal.ForwardingProxy`1">
+            <summary>
+                This is a small piece of Remoting magic. It enables us to invoke methods on a
+                remote object without knowing its actual type. The only restriction is that the
+                names and shapes of the types and their members must be the same on each side of
+                the boundary.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Design.Internal.ForwardingProxy`1.#ctor(System.Object)">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Design.Internal.ForwardingProxy`1.Invoke(System.Runtime.Remoting.Messaging.IMessage)">
+            <summary>
+                Intercepts method invocations on the object represented by the current instance
+                and forwards them to the target to finish processing.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Design.Internal.ForwardingProxy`1.GetTransparentProxy">
+            <summary>
+                This API supports the Entity Framework Core infrastructure and is not intended to be used
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.Internal.ToolsStrings">
+            <summary>
+            	This API supports the Entity Framework Core infrastructure and is not intended to be used 
+                directly from your code. This API may change or be removed in future releases.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.ToolsStrings.BuildFailed(System.Object)">
+            <summary>
+            Build failed on '{projectName}'.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.ToolsStrings.ClassLibrariesNotSupportedInCli(System.Object,System.Object)">
+            <summary>
+            Could not invoke this command on the startup project '{projectName}'. This preview of Entity Framework tools does not support commands on class library projects in ASP.NET Core and .NET Core applications. See {fwlink} for details and workarounds.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.ToolsStrings.DesktopCommandsRequiresWindows(System.Object)">
+            <summary>
+            Could not invoke this command on this project. Commands for framework '{framework}' are only supported on Windows.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.ToolsStrings.LogBeginDispatch(System.Object,System.Object)">
+            <summary>
+            Invoking dependency command '{projectCommand}' in project '{projectName}'
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.ToolsStrings.LogUsingConfiguration(System.Object)">
+            <summary>
+            Using configuration '{configName}'.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.ToolsStrings.LogUsingFramework(System.Object)">
+            <summary>
+            Using framework '{frameworkName}'.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.ToolsStrings.LogUsingTargetProject(System.Object)">
+            <summary>
+            Using target project '{project}'.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.ToolsStrings.ProjectDependencyCommandNotFound(System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            Could not invoke this command with the startup project '{projectName}'. Check that '{dependencyCommand}' has been added to "dependencies" in the startup project and that the version of '{toolCommand}' in "tools" and '{dependencyCommand}' are the same. See {fwlink} for more details.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.ToolsStrings.LogDataDirectory(System.Object)">
+            <summary>
+            Setting the data directory to '{path}'.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.ToolsStrings.LogUsingStartupProject(System.Object)">
+            <summary>
+            Using startup project '{project}'.
+            </summary>
+        </member>
+    </members>
+</doc>
